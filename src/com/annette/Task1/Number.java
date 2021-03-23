@@ -9,7 +9,9 @@ public class Number {
             System.out.println("Try again. Enter the value");
             scanner.next();
         }
-        return scanner.nextInt();
+        int number = scanner.nextInt();
+        scanner.close();
+        return number;
     }
    public static int getLastNumber(int number){
        return switch (number){
@@ -17,7 +19,7 @@ public class Number {
             case 3,7 -> 9;
             case 4-> 6;
             case 9 -> 1;
-            default -> number % 10;
+            default -> Math.abs(number%10);
        };
    }
    public static void printNumber(int lastNumber){
