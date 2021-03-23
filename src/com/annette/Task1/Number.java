@@ -21,6 +21,6 @@ public class Number {
        };
    }
    public static void printNumber(int lastNumber){
-        System.out.println("Last number is " + lastNumber);
+        System.out.println("Last number of square is " + lastNumber);
    }
 }
