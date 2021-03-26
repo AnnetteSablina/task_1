@@ -1,4 +1,4 @@
-package com.annette.Task3;
+package com.annette.task3;
 
 public class Runner {
     public static void main(String ... args){

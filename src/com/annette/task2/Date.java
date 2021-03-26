@@ -1,4 +1,4 @@
-package com.annette.Task2;
+package com.annette.task2;
 
 public class Date {
     int year;

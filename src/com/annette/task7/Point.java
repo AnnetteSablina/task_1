@@ -1,4 +1,4 @@
-package com.annette.Task7;
+package com.annette.task7;
 
 public class Point {
     int x;

@@ -1,8 +1,8 @@
-package com.annette.Task5;
+package com.annette.task5;
 
-import com.annette.Utilities.EnterValue;
-import com.annette.Utilities.Mode;
-import com.annette.Utilities.NegativeException;
+import com.annette.utility.EnterValue;
+import com.annette.utility.Mode;
+import com.annette.utility.NegativeException;
 
 public class EnterNumber {
     public static int enterNumber() {

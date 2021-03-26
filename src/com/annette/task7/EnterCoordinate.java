@@ -1,8 +1,8 @@
-package com.annette.Task7;
+package com.annette.task7;
 
-import com.annette.Utilities.EnterValue;
-import com.annette.Utilities.Mode;
-import com.annette.Utilities.NegativeException;
+import com.annette.utility.EnterValue;
+import com.annette.utility.Mode;
+import com.annette.utility.NegativeException;
 
 import java.util.Locale;
 

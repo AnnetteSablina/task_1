@@ -1,4 +1,4 @@
-package com.annette.Task1;
+package com.annette.task1;
 import java.util.Scanner;
 
 public class Number {

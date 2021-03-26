@@ -1,4 +1,4 @@
-package com.annette.Task5;
+package com.annette.task5;
 
 public class CheckPerfection {
     public static boolean checkNumberPerfection(int number){

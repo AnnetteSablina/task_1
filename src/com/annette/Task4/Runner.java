@@ -1,9 +1,9 @@
 package com.annette.Task4;
 
 
-import com.annette.Utilities.EnterValue;
-import com.annette.Utilities.Mode;
-import com.annette.Utilities.NegativeException;
+import com.annette.utility.EnterValue;
+import com.annette.utility.Mode;
+import com.annette.utility.NegativeException;
 
 public class Runner {
     public static void main (String ... args) throws NegativeException {

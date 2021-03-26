@@ -1,4 +1,4 @@
-package com.annette.Task2;
+package com.annette.task2;
 import java.lang.Exception;
 
 public class MonthException extends Exception {

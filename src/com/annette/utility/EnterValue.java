@@ -1,8 +1,7 @@
-package com.annette.Utilities;
+package com.annette.utility;
 
 import java.io.FilterInputStream;
 import java.util.Scanner;
-
 
 
 public class EnterValue {

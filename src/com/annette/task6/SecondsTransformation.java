@@ -1,4 +1,4 @@
-package com.annette.Task6;
+package com.annette.task6;
 
 public class SecondsTransformation {
     public static int countHours(int seconds){

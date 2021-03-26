@@ -1,4 +1,4 @@
-package com.annette.Utilities;
+package com.annette.utility;
 
 import java.io.IOException;
 
