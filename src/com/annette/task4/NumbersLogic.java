@@ -1,4 +1,4 @@
-package com.annette.Task4;
+package com.annette.task4;
 
 public class NumbersLogic {
     public static boolean parityCheck(int a,int b, int c, int d){

@@ -19,7 +19,7 @@ public class Month  {
      }
 
      public static void checkMonth(int month) throws MonthException {
-         if (month < 0 || month > 12 ) throw new MonthException("Incorrect month value");
+         if (month < 0 || month > 13 ) throw new MonthException("Incorrect month value");
      }
 
 }
