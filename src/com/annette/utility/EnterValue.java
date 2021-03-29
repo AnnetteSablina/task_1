@@ -1,12 +1,11 @@
 package com.annette.utility;
 
-import java.io.FilterInputStream;
 import java.util.Scanner;
 
 
 public class EnterValue {
-   public static int enterValue(String message, Mode mode) throws NegativeException {
-        Scanner scanner = new Scanner(new FilterInputStream(System.in){ public void close() {}});
+   public static int enterValue(String message, Mode mode) throws NegativeException, ZeroException {
+        Scanner scanner = new Scanner(System.in);
         System.out.println(message);
         while(!scanner.hasNextInt()){
             System.out.println("Try again." + message);
@@ -14,7 +13,7 @@ public class EnterValue {
         }
         int value = scanner.nextInt();
         if (mode == Mode.POSITIVE && value < 0)  throw new NegativeException("You entered negative value");
-        scanner.close();
+        if (mode == Mode.POSITIVE_NOT_NULL && value == 0) throw new ZeroException("Value must be positive and not zero");
         return value;
    }
 }

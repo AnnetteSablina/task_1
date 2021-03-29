@@ -1,27 +1,48 @@
 package com.annette.task2;
 
 public class Date {
-    int year;
-    int month;
-    int day;
+    private final int year;
+    private final int month;
+    private final int day;
 
-    Date(int year, int month) {
-        this.year = year;
-        this.month = month;
+    Date() {
+        this.year = 0;
+        this.month = 0;
+        this.day = 0;
     }
 
-    public void getNumberOfDays(boolean isLeap) throws MonthException {
-        this.day = switch (this.month) {
+    public Date(int year, int month, int day) {
+        this.year = year;
+        this.month = month;
+        this.day = day;
+    }
+
+    public static Date fromUserInput() {
+        while (true) {
+            int year = Year.enterYear();
+            int month = Month.enterMonth();
+            int day = 0;
+            try {
+                day = Date.getNumberOfDays(Year.isLeap(year), month);
+                return new Date(year, month, day);
+            } catch (MonthException e) {
+                System.out.println(e.getMessage());
+            }
+        }
+
+    }
+
+    private static int getNumberOfDays(boolean isLeap, int month) throws MonthException {
+        int day = switch (month) {
             case 1, 3, 5, 7, 8, 10, 12 -> 31;
             case 4, 6, 9, 11 -> 30;
             case 2 -> 28;
             default -> throw new MonthException("Unexpected value: ");
         };
-        if (this.month == 2 && isLeap) this.day = 29;
+        if (month == 2 && isLeap) day = 29;
+        return day;
     }
-    public int getYear() {
-        return year;
-    }
+
 
     public void printDay() {
         System.out.println("In " + this.month + " " + this.year + " there are " + this.day + " days");
