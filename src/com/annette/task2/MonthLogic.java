@@ -5,7 +5,7 @@ import com.annette.utility.Mode;
 import com.annette.utility.NegativeException;
 import com.annette.utility.ZeroException;
 
-public class Month  {
+public class MonthLogic {
 
      public static int enterMonth() {
          while(true){

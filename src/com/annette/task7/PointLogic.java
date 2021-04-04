@@ -3,6 +3,7 @@ import static java.lang.Math.pow;
 import static java.lang.Math.sqrt;
 
 public class PointLogic {
+
     public static double countDestination(Point point) {
         return (sqrt(pow(point.getX(), 2) + pow(point.getY(), 2)));
     }

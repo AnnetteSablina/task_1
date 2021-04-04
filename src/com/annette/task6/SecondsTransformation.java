@@ -1,14 +1,17 @@
 package com.annette.task6;
 
 public class SecondsTransformation {
+    public static final int secondsNumberPerHour = 3600;
+    public static final int minutesNumberPerHour = 3600;
+
     public static int countHours(int seconds){
-        return seconds / 3600;
+        return seconds / secondsNumberPerHour;
     }
     public static int countMinutes(int seconds){
-        return (seconds - countHours(seconds)*3600)/60;
+        return (seconds - countHours(seconds)*secondsNumberPerHour/minutesNumberPerHour);
     }
     public static int countSeconds(int seconds){
-        return (seconds - (countHours(seconds)*3600 + countMinutes(seconds) * 60));
+        return (seconds - (countHours(seconds)*secondsNumberPerHour + countMinutes(seconds) * minutesNumberPerHour));
     }
 
 }

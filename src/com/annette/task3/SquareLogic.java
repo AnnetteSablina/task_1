@@ -4,7 +4,7 @@ import com.annette.utility.EnterValue;
 import com.annette.utility.Mode;
 import com.annette.utility.NegativeException;
 import com.annette.utility.ZeroException;
-import static java.lang.Math.pow;
+
 
 public class SquareLogic {
     public static int enterSquareSide() {
@@ -18,9 +18,9 @@ public class SquareLogic {
     }
 
     public static int countSquare(int squareSide) {
-        return (int) pow(squareSide, 2);
+        return (int) Math.pow(squareSide, 2);
     }
-
+    
     public static int countInscribedSquare(int square) {
         return square / 2;
     }

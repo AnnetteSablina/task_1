@@ -10,13 +10,13 @@ public class Section {
     private int sectionEnd;
     private int divisionValue;
 
-    Section (){};
+    Section (){}
     Section (int sectionStart, int sectionEnd,int divisionValue) {
         this.sectionStart = sectionStart;
         this.sectionEnd = sectionEnd;
         this.divisionValue = divisionValue;
     }
-    public static Section fromUserInput(){
+    public static Section fillSectionFields(){
         int sectionStart;
         int sectionEnd;
         int divisionValue;
